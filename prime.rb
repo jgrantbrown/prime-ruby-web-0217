@@ -1,4 +1,22 @@
-def prime?(x)
+def prime?(num)
+    if num < 2
+        return false
+    elsif num < 3
+        return true
+      end
+     i =2
+    while i<num
+        if num%i == 0
+            return false
+          end
+        i += 1
+    return true
+  end
+end
+
+
+
+=begin def prime?(x)
   return false if x < 2
   2.upto(x - 1) do |n|
     return false if (x % n).zero?
