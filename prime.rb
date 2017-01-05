@@ -1,7 +1,12 @@
 def prime?(x)
-  return false if x < 2
+  if x < 2
+    return false
   2.upto(x - 1) do |n|
-    return false if (x % n).zero?
+    if (x % n).zero?
+    return false
   end
-  true
+  return true
 end
+
+# Found on stackoverflow still a bit confused on this
+# need to further Research
